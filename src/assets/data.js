@@ -252,5 +252,9 @@ export const myDetails = new Map([
             {name :"CSS", url: "/css.jpg"},  
             {name :"Python", url: "/python.png"},
         ]
-    },]
+    },],
+    ["mobile", "+917702249962"],
+    ["email", "vinaykumarmarni26@gmail.com"],
+    ["github", ""],
+    ["linkdin", ""]
 ])

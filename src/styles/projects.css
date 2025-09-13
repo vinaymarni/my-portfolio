@@ -1,0 +1,76 @@
+.projectCard{
+    border-radius: 10px;
+    max-width: 372px;
+    box-shadow: 5px 10px 18px #888888;
+    font-family: Poppins;
+}
+
+.projectCardImgCon{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 260px;
+    background-image: radial-gradient(rgb(238, 238, 238), rgb(208, 205, 205));
+}
+
+.projectCardImg{
+    width: 100%;
+    height: 100%;
+}
+
+.projectCardBottomCon{
+    text-align: left;
+    padding: 1.7rem;
+}
+
+.projectNameText{
+    font-size: 28px;
+    font-family: Poppins;
+    margin-bottom: 10px;
+}
+
+.projectContant{
+    color: #666666;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.projectTechStack{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+.projectTechStack span{
+    font-weight: 600;
+}
+
+.linksCon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardLinksTag{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: black;
+}
+
+.cardLinksTag span{
+    text-decoration: underline;
+}
+
+.linksSvg{
+    height: 20px;
+    width: 20px;
+}
+
+.ProjectCardsCon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}

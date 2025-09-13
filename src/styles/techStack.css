@@ -16,6 +16,7 @@
 .techSectionText{
     color: #666666;
     font-size: 32px;
+    margin-bottom: 3rem;
 }
 
 .skillsCon{
@@ -25,7 +26,6 @@
     width: 100%;
     gap: 3rem;
     flex-wrap: wrap;
-    margin-top: 3rem;
 }
 
 .skillImage{
@@ -36,5 +36,5 @@
 .skillImageCon{
     width: 120px;
     height: 120px;
-    
+
 }
