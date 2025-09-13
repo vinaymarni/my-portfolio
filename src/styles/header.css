@@ -1,0 +1,67 @@
+.header-main-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+}
+
+.header-right-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-sections-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sectionButtonCon{
+    width: auto;
+}
+
+.sectionButton{
+    color: #A7A7A7;
+    font-size: 26px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+}
+
+.header-left-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-profile-name{
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-profile-bottom-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modeIcon{
+    height: 30px;
+    width: 30px;
+}
+
+.header-social-con{
+    margin-left: 3rem;
+}

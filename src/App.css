@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-family: sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
