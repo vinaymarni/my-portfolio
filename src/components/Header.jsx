@@ -5,7 +5,7 @@ import "../styles/header.css";
 import { GithubSvg, LinkdinSvg, ModeSwitchSvg } from '../assets/commonSvgs';
 
 function Header() {
-  const allSections = sectionsData ? sectionsData.get("sections") : [];
+  const allSections = sectionsData.get("sections");
   console.log(allSections)
   return (
     <div className='header-main-con'>

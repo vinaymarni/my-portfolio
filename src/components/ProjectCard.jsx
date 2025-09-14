@@ -1,23 +1,22 @@
 import React from 'react'
 import { GithubSvg, LinkSvg } from '../assets/commonSvgs'
 
-function ProjectCard() {
+function ProjectCard({data}) {
+  const {name, description, technologiesUsed} = data;
   return (
     <div className='projectCard'>
       <div className='projectCardImgCon'>
         <img 
-            alt={"projectName"}
+            alt={name}
             src=''
             className='projectCardImg'
-            title={"projectName"}
+            title={name}
         />
       </div>
       <div className='projectCardBottomCon'>
-        <h3 className='projectNameText'>Project Tile goes here</h3>
-        <p className='projectContant'>
-            This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
-        </p>
-        <p className='projectTechStack'><span>Tech stack :</span> HTML , JavaScript, SASS, React</p>
+        <h3 className='projectNameText'>{name}</h3>
+        <p className='projectContant'>{description}</p>
+        <p className='projectTechStack'><span>Tech stack :</span>{technologiesUsed.map(each=>each.name).join(", ")}</p>
         <div className='linksCon'>
             <a href='' className='cardLinksTag'>
                 <LinkSvg className="linksSvg"/>

@@ -10,6 +10,7 @@
     padding-left: 10%;
     padding-right: 10%;
     background-color: white;
+    z-index: 3;
 }
 
 .header-right-con{
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .sectionButtonCon{
@@ -64,4 +65,20 @@
 
 .header-social-con{
     margin-left: 3rem;
+}
+
+/* TAB */
+@media only screen and (min-width: 801px) and (max-width: 1280px) {
+  .header-main-con {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  .header-main-con {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
