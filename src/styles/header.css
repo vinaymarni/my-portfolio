@@ -61,10 +61,39 @@
 .modeIcon{
     height: 30px;
     width: 30px;
+    cursor: pointer;
 }
+
 
 .header-social-con{
     margin-left: 3rem;
+}
+
+.ModeDropDownMainCon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ModeDropDownCon{
+    position: absolute;
+    top: 30px;
+    background-color: rgb(235, 236, 236);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    min-width: 100px;
+}
+
+.ModeDropDownCon span{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 6px;
+    font-weight: poppins;
+    cursor: pointer;
 }
 
 /* TAB */

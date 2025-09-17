@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { CarouselScrollButton } from "../assets/commonSvgs";
+import "../styles/projects.css";
 
 function CardsCarousal({
   allCards,

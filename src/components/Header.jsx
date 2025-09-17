@@ -1,14 +1,16 @@
 import React from 'react'
-import { sectionsData } from '../assets/data';
+import { data, sectionsData } from '../assets/data';
 import Button from "../commonComponents/Button";
 import "../styles/header.css";
-import { GithubSvg, LinkdinSvg, ModeSwitchSvg } from '../assets/commonSvgs';
+import { GithubSvg, LinkdinSvg } from '../assets/commonSvgs';
+import { useAtomValue } from 'jotai';
+import ModeDropDown from '../commonComponents/ModeDropDown';
 
 function Header() {
+  const {mode} = useAtomValue(data);
   const allSections = sectionsData.get("sections");
-  console.log(allSections)
   return (
-    <div className='header-main-con'>
+    <div style={{ background: mode === "light" ? "white" : "black" }} className='header-main-con'>
       <div className='header-left-con'>
         <h1 className='header-profile-name'>{`{${"007"}}`}</h1>
         <p className='header-profile-name header-profile-bottom-name'>vinay</p>
@@ -31,13 +33,10 @@ function Header() {
         </div>
 
         <div className='header-sections-con header-social-con'>
-          <ModeSwitchSvg className="modeIcon" />
           <GithubSvg />
           <LinkdinSvg />
+          <ModeDropDown />
         </div>
-
-        
-
       </div>
     </div>
   )

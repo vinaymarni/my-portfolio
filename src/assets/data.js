@@ -1,4 +1,11 @@
-import { EmailSvg, GithubSvg, LinkdinSvg, WhatsAppSvg } from "./commonSvgs"
+import { atom } from "jotai";
+import { EmailSvg, GithubSvg, LinkdinSvg, WhatsAppSvg } from "./commonSvgs";
+
+let initailData = {
+    mode: "light" // light, dark, Digital
+}
+
+export const data = atom(initailData);
 
 // Frontend:  
 // - HTML, CSS, JavaScript, Bootstrap  
