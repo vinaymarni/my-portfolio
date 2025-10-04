@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import "../styles/techStack.css"
-import { myDetails, otherDetails } from '../assets/data';
+import { itemScrollIntoView, myDetails, otherDetails } from '../assets/data';
 import Button from '../commonComponents/Button';
 
 function TechStack() {
   const [showMore, setShowMore] = useState(false);
   const skills = myDetails.get("skills");
   return (
-    <div className='techStackMainSection'>
+    <div id='techStack' className='techStackMainSection'>
       <h2 className='techSectionHeading'>My Tech Stack</h2>
       <p className='techSectionText'> Technologies I’ve been working with recently</p>
       <div className='skillsCon' style={{ height: showMore ? "auto" : "330px" }}>
@@ -37,7 +37,10 @@ function TechStack() {
                 title={showMore ? "Show Less" : "Show More"}
                 toolTip={`Click to ${showMore ? "Show Less" : "Show More"} Skills`}
                 buttonConClassName="footerSectionButtonCon"
-                onSubmit={()=>setShowMore(!showMore)}
+                onSubmit={()=>{
+                  setShowMore(!showMore);
+                  if(showMore) itemScrollIntoView("techStack");
+                }}
               />
     </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { data, sectionsData } from '../assets/data';
+import { data, itemScrollIntoView, sectionsData } from '../assets/data';
 import Button from "../commonComponents/Button";
 import "../styles/header.css";
 import { GithubSvg, LinkdinSvg } from '../assets/commonSvgs';
@@ -19,7 +19,6 @@ function Header() {
         <div className='header-sections-con'>
           {allSections.map(eachSection => {
             const sectionData = sectionsData.get(eachSection);
-            console.log(sectionData)
             return(
               <Button
                 key={`${eachSection}_button`}
@@ -27,6 +26,7 @@ function Header() {
                 name={eachSection}
                 title={sectionData.title}
                 buttonConClassName="sectionButtonCon"
+                onSubmit={()=>itemScrollIntoView(eachSection)}
               />
             )
           })}

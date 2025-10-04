@@ -152,7 +152,7 @@ export const sectionsData = new Map([
     ["contact", {
         link: "",
         logo: "",
-        name: "ontact",
+        name: "contact",
         title:"Contact"
     }],
 ])
@@ -167,8 +167,9 @@ export const myDetails = new Map([
     ["github", ""],
     ["linkdin", ""],
     ["address", "Bengaluru - 560066"],
-    ["experience", ["BFC ", "RP CLAN"]],
-    ["projects", ["Get Right Property", "Rp Clan Internal Application", "Expense Tracker", "Hospital Management System", "PDF to IMAGE Converter", "Personal Portfolio Project"]]
+    ["experience", ["BFC", "RP CLAN"]],
+    ["projects", ["Get Right Property", "Rp Clan Internal Application", "Expense Tracker", "Hospital Management System", "PDF to IMAGE Converter", "Personal Portfolio Project"]],
+    ["education", ["Diploma", "BTech"]],
 ]);
 
 export const otherDetails = new Map([
@@ -176,24 +177,29 @@ export const otherDetails = new Map([
         name: "Frontend Language",
         content:"Skilled in frontend languages, creating engaging and responsive user interfaces.",
         technologies:[ 
-            {name :"React", url: "/react.jpg"},  
-            {name :"HTML", url: "/css5.jpg"},
-            {name :"CSS", url: "/css.jpg"}, 
-            {name :"Bootstrap", url: "/bootstrap.jpg"}, 
-            {name :"Micro-frontend Architecture with React ", url: "/microService.jpg"},  
-            {name :"NextJs", url: "/next.webp"},  
-            {name :"React Query", url: "/reactQuery.jpg"}, 
-            {name :"Javascript", url: "/Javascript.jpg"}, 
-            {name :"Hooks", url: "/reactHooks.png"},
+            {name :"React", url: "/react.png"},  
+            {name :"HTML", url: "/html.png"},
+            {name :"CSS", url: "/css.png"}, 
+            {name :"Type Script", url: "/typescript.png"},
+            {name :"Tailwind", url: "/tailwind.png"},  
+            {name :"Bootstrap", url: "/bootstrap.png"}, 
+            {name :"Micro-frontend Architecture with React ", url: "/microservices-logo.webp"},  
+            {name :"NextJs", url: "/next.png"},  
+            {name :"React Query", url: "/reactQuery.png"}, 
+            {name :"Javascript", url: "/javascript.png"}, 
+            {name :"Hooks", url: "/hooks.png"},
             {name :"Redux", url: "/redux.png"},
-            {name :"Jotai", url: "/jotai.png"},   
+            {name :"Jotai", url: "/jotai.png"},  
+            {name :"Styled Components", url: "/styledComponents.png"},  
+            {name :"AG Grid", url: "/agGrid.png"},
+            {name :"Sync Fusion", url: "/syncfusion.png"},
         ]
     },],
     ["Backend Language", {
         name: "Backend Language",
         content:"Skilled in backend languages, ensuring efficient, reliable server-side solutions.",
         technologies:[ 
-            {name :"Nodejs", url: "/node.jpg"},  
+            {name :"Nodejs", url: "/nodejs.png"},  
             {name :"ExpressJs", url: "/express.png"},
             {name :"Python", url: "/python.png"},
         ]
@@ -202,21 +208,21 @@ export const otherDetails = new Map([
         name: "Tools",
         content:"Experienced with various tools and IDEs for efficient development workflows.",
         technologies:[ 
-            {name :"GitHub", url: "/github.jpg"}, 
-            {name :"VS Code", url: "/vscode.jpg"}, 
-            {name :"Eclipse", url: "/eclipse.jpg"}, 
+            {name :"GitHub", url: "/github.png"}, 
+            {name :"VS Code", url: "/vscode.png"}, 
+            {name :"Eclipse", url: "/eclipse.png"}, 
             {name :"MySQL Workbench", url: "/mysql.png"},
             {name :"STS", url: "/sts.png"}, 
-            {name :"Postman", url: "/postman.jpg"}, 
+            {name :"Postman", url: "/postman.png"}, 
         ]
     },],
     ["Frameworks", {
         name: "Frameworks",
         content:"Proficient in diverse frameworks, delivering scalable and maintainable software solutions.",
         technologies:[ 
-            {name :"Spring boot", url: "/springBoot.jpg"}, 
-            {name :"ReactJS", url: "/react.jpg"},  
-            {name: "NextJs", url: "/next.webp"}
+            {name :"Spring boot", url: "/springBoot.png"}, 
+            {name :"ReactJS", url: "/react.png"},  
+            {name: "NextJs", url: "/next.png"}
         ]
     },],
     ["Database", {
@@ -224,7 +230,7 @@ export const otherDetails = new Map([
         content:"Skilled in Database technologies.",
         technologies:[ 
             {name :"MySQL", url: "/mysql.png"},
-            {name :"sqLite", url: "/sqlite.jpg"},
+            {name :"sqLite", url: "/sqlite.png"},
             {name :"MongoDb", url: "/mongodb.png" }, 
         ]
     },],
@@ -232,29 +238,29 @@ export const otherDetails = new Map([
         name: "DevOps",
         content:"Proficient in DevOps and Testing, optimizing deployments and ensuring quality.",
         technologies:[ 
-            {name :"Git", url: "/git.jpg"},
+            {name :"Git", url: "/git.png"},
         ]
     },],
     ["Methodologies & Concepts", {
         name: "Methodologies & Concepts",
         content:"Skilled in Methodologies & Concepts.",
         technologies:[ 
-            {name :"Agile Methodologies", url: "/agile-icon.jpg" }, 
+            {name :"Agile Methodologies", url: "/agile-icon.png" }, 
             {name :"Database Management Systems (DBMS)", url: "/dbms.png"}, 
             {name :"Software Development Life Cycle (SDLC)", url: "/sdlc.png"}, 
             {name :"Debugging", url: "/debugging.png"}, 
-            {name :"Microservices Architecture", url: "/microservicesArchitecture.png" }, 
-            {name :"Monolithic Architecture", url: "/monolithic.webp"}, 
-            {name :"REST APIs", url: "/restAPIS.jpg"},  
+            {name :"Microservices Architecture", url: "/microservices-logo.webp" }, 
+            {name :"Monolithic Architecture", url: "/monolithic.jpg"}, 
+            {name :"REST APIs", url: "/restAPIS.png"},  
         ]
     }],
     ["Programming Languages", {
         name: "Programming Languages",
         content:"Skilled in multiple programming languages, delivering robust and efficient solutions.",
         technologies:[ 
-            {name :"Javascript", url: "/Javascript.jpg"}, 
-            {name :"HTML", url: "/css5.jpg"}, 
-            {name :"CSS", url: "/css.jpg"},  
+            {name :"Javascript", url: "/javascript.png"}, 
+            {name :"HTML", url: "/html.png"}, 
+            {name :"CSS", url: "/css.png"},  
             {name :"Python", url: "/python.png"},
         ]
     },],
@@ -286,30 +292,84 @@ export const otherDetails = new Map([
         name: "RP CLAN",
         logo: "/rpclan.png",
         joinDate: "Jun 2023 - Present",
-        role: "SOFTWARE DEVELOPER",
+        endDate: "",
+        role: "Full Stack Developer",
+        type:"Full Time",
+        city:"Bengaluru",
         keyPoints:[
-            "Lead the development of two innovative projects, architecting,designing, and implementing robust solutions.",
-            "Utilized Reactjs and Next js for front-end development, creating userfriendly interfaces.",
-            "Employed Java, Spring boot and Hibernate for back-end development, ensuring application robustness and efficiency.",
-            "Leveraged AWS for cloud deployment, optimizing scalability and reliability",
-            "Collaborated with cross-functional teams, delivering seamless user experiences and driving business growth and innovation",
+            "Developed pixel-perfect, fully responsive UIs in React.js and Next.js, closely aligned with Figma designs.",
+            "Built high-performance, SEO-friendly web applications with optimized rendering using both client-side and server-side techniques in Next.js.",
+            "Diagnosed and resolved complex UI/logic bugs, improving stability and performance across React/Next.js projects.",
+            "Implemented scalable state management (Redux, Context API, React Query,  jotai) and handled APIs with optimistic updates and robust error handling.",
+            "Collaborated with cross-functional teams to deliver seamless, user-centric experiences that supported business goals.",
         ],
-    }]
+    }],
+    ["BFC",    {
+        name: "BFC technologies Inc",
+        logo: "/BFC.jpg",
+        joinDate: "Nov 2021",
+        endDate: "2023 jan",
+        role: "Application Engineer - Trainee",
+        type:"Fully Remote",
+        city:"Bengaluru",
+        keyPoints:[
+            "Learned to build reusable React components using both class-based and functional components with Hooks.",
+            "Gained hands-on experience in responsive UI development based on Figma designs.",
+            "Practiced basic state management and Git operations for version control and collaboration, including implementing Git branching strategies such as feature branching, Git Flow, and pull request workflows.",
+            "Explored microservices architecture in frontend development, along with GraphQL and third-party plugins.",
+            "Worked with popular UI libraries like Syncfusion and AG Grid for data-rich interfaces.",
+            "Used Atlassian Jira for task tracking, ticket management, and creating basic technical documentation."
+        ],
+    }],
+    ["Diploma",    {
+        name: "VSM college of Engineering",
+        logo: "",
+        joinDate: "2013",
+        endDate: "2016",
+        role: "Diploma in Electrical and Electronic Engineering-(EEE)",
+        type: "Full Time",
+        percentage: "72%",
+        city:"Ramachandrapuram - AP",
+        keyPoints:[],
+    }],
+    ["BTech",    {
+        name: "VSM college of Engineering",
+        logo: "",
+        joinDate: "2017",
+        endDate: "2020",
+        role: "Bachelor in Electrical and Electronic Engineering-(EEE)",
+        type: "Full Time",
+        percentage: "70%",
+        city:"Ramachandrapuram - AP",
+        keyPoints:[],
+    }],
 ]);
+
+// EDUCATION:
+// VSM college of Engineering
+// BTech - Electrical and electronic engineering-(EEE) 
+// 2017 - 2020
+// Cumulative percentage - 70%
+
+// HIGHER SECONDARY EDUCATION
+// VSM college of engineering 
+// Diploma - Electrical and electronic engineering-(EEE) 
+// 2013 - July, 2016
+// Cumulative percentage - 72%
 
 export const projectDetails = new Map([
     ["Get Right Property",  {
         name:"Get Right Property",
         technologiesUsed: [
-            {name: "Spring Boot", url: "/springBoot.jpg"},
-            {name: "ReactJS", url: "/react.jpg"},
-            {name: "Javascript", url: "/Javascript.jpg"},
+            {name: "Spring Boot", url: "/springBoot.png"},
+            {name: "ReactJS", url: "/react.png"},
+            {name: "Javascript", url: "/javascript.png"},
             {name: "MYSQL", url:  "/mysql.png"},
-            {name: "NextJs", url: "/next.webp"},
-            {name: "GitHub", url: "/github.jpg"},
+            {name: "NextJs", url: "/next.png"},
+            {name: "GitHub", url: "/github.png"},
             // {name: "Maven", url: maven},
-            {name: "html", url: "/css5.jpg"},
-            {name: "CSS", url:"/css.jpg"},
+            {name: "html", url: "/html.png"},
+            {name: "CSS", url:"/css.png"},
             // {name: "JWT", url: jwt},
         ],
         description:"Developed secure real estate site with Java, Spring Boot, React, AWS.",
@@ -317,20 +377,21 @@ export const projectDetails = new Map([
         contant: "Developed a real estate website with Java, Spring Boot, ReactJs, and NextJs. Integrated security using Spring Security and JWT, and efficient search with Solr. Hosted on AWS EC2 with S3 and RDS storage. Implemented CI/CD pipelines using Jenkins and Maven.",
         images: [],
         videos: [],
+        coverImage: "/project1.jpg"
     },],
     ["Rp Clan Internal Application", {
         name:"Rp Clan Internal Application",
         technologiesUsed: [
-            {name: "Spring Boot", url: "/springBoot.jpg"},
-            {name: "ReactJS", url: "/react.jpg"},
-            {name: "Javascript", url: "/Javascript.jpg"},
+            {name: "Spring Boot", url: "/springBoot.png"},
+            {name: "ReactJS", url: "/react.png"},
+            {name: "Javascript", url: "/javascript.png"},
             {name: "MYSQL", url:  "/mysql.png"},
-            {name: "NextJs", url: "/next.webp"},
+            {name: "NextJs", url: "/next.png"},
             // {name: "Spring MVC", url: springMVC},
             // {name: "Maven", url: maven},
-            {name: "GitHub", url: "/github.jpg"},
-            {name: "CSS", url:"/css.jpg"},
-            {name: "html", url: "/css5.jpg"},
+            {name: "GitHub", url: "/github.png"},
+            {name: "CSS", url:"/css.png"},
+            {name: "html", url: "/html.png"},
             // {name: "JWT", url: jwt},
         ],        
         description:"Streamlined property listings with efficient data approval system.",
@@ -338,13 +399,14 @@ export const projectDetails = new Map([
         contant: "Developed and implemented an internal data approval system for Get Right Property, streamlining workflows for property listings review and approval. Ensured data accuracy, security, and compliance with protection standards. Utilized modern technologies to automate processes, enhancing efficiency and overall data management.",
         images: [],
         videos: [],
+        coverImage: "/project2.jpg"
     },],
     ["Expense Tracker",  {
         name:"Expense Tracker",
         technologiesUsed: [
-            {name: "Javascript", url:"/Javascript.jpg"},
-            {name :"Spring Framework", url: "/springBoot.jpg"},
-            {name: "ReactJS", url: "/react.jpg"},
+            {name: "Javascript", url:"/javascript.png"},
+            {name :"Spring Framework", url: "/springBoot.png"},
+            {name: "ReactJS", url: "/react.png"},
             // {name: "JWT", url: jwt},
             // {name: "Maven", url: maven}
         ],        
@@ -353,33 +415,35 @@ export const projectDetails = new Map([
         contant: "An efficient expense tracking application enabling users to monitor spending and split expenses into groups for simplified management and collaboration. Users can easily categorize expenditures and analyze financial trends, promoting effective budgeting and financial transparency.",
         images: [],
         videos: [],
+        coverImage: "/project3.jpg"
     },],
     ["Hospital Management System", {
         name:"Hospital Management System",
         technologiesUsed: [
-            {name :"Spring Framework", url: "/springBoot.jpg"},
-            // {name: "Spring Boot", url: "/springBoot.jpg"},
+            {name :"Spring Framework", url: "/springBoot.png"},
+            // {name: "Spring Boot", url: "/springBoot.png"},
             // {name :"Spring Cloud (Microservices)", url: springCloud},
             // {name: "Maven", url: maven},
-            {name: "Javascript", url: "/Javascript.jpg"},
-            {name: "GitHub", url: "/github.jpg"},
-            {name: "CSS", url:"/css.jpg"},
-            {name: "html", url: "/css5.jpg"},
-            {name: "ReactJS", url: "/react.jpg"},
+            {name: "Javascript", url: "/javascript.png"},
+            {name: "GitHub", url: "/github.png"},
+            {name: "CSS", url:"/css.png"},
+            {name: "html", url: "/html.png"},
+            {name: "ReactJS", url: "/react.png"},
         ],        
         description:"Built web app for booking, health records, and management.",
         link:"https://github.com/chiranjiv09/g2-spring-api-gateway",
         contant: "Developed a web application for patients to book appointments, access health records, receive notifications and enable physicians and nurses to manage and update diagnosis and medication details efficiently.",
         images: [],
         videos: [],
+        coverImage: "/project4.jpg"
     },],
     ["PDF to IMAGE Converter",  {
         name:"PDF to IMAGE Converter",
         technologiesUsed: [
-            {name: "ReactJS", url: "/react.jpg"},
-            {name: "Cascading Style Sheets (CSS)", url:"/css.jpg"},
-            {name: "Javascript", url:"/Javascript.jpg"},
-            {name: "html", url:"/css5.jpg"},
+            {name: "ReactJS", url: "/react.png"},
+            {name: "Cascading Style Sheets (CSS)", url:"/css.png"},
+            {name: "Javascript", url:"/javascript.png"},
+            {name: "html", url:"/html.png"},
             {name: "Figma", url: "/figma.webp"},
         ],        
         description:"Converts PDFs to customizable images in JPEG, JPG, PNG formats; GitHub code available.",
@@ -387,14 +451,15 @@ export const projectDetails = new Map([
         contant: "This project converts PDFs into customizable named images, supporting JPEG, JPG, and PNG formats. It offers flexibility and personalization, with source code available on GitHub for implementation insights and functionality customization.",
         images: ["/projectPdfImg3.jpeg", "/projectPdfImg2.jpeg", "/projectPdfImg1.jpeg" ],
         videos: [],
+        coverImage: "/project5.jpg"
     },],
     ["Personal Portfolio Project", {
         name:"Personal Portfolio Project",
         technologiesUsed: [
-            {name: "ReactJS", url: "/react.jpg"},
-            {name: "CSS", url:"/css.jpg"},
-            {name: "Javascript", url:"/Javascript.jpg"},
-            {name: "html", url:"/css5.jpg"},
+            {name: "ReactJS", url: "/react.png"},
+            {name: "CSS", url:"/css.png"},
+            {name: "Javascript", url:"/javascript.png"},
+            {name: "html", url:"/html.png"},
             {name: "Figma", url: "/figma.webp"},
         ],        
         description:"Highlighting my journey, skills, and expertise in development.",
@@ -402,10 +467,22 @@ export const projectDetails = new Map([
         contant: "A showcase of my professional journey, skills, and accomplishments, highlighting projects and experiences in software development and Featuring a collection of works demonstrating expertise skills.",
         images: [],
         videos: [],
+        coverImage: "/project6.jpg"
     },]
 ]);
 
-
+export function itemScrollIntoView(elId, center) {
+  setTimeout(() => {
+    const element = document.getElementById(elId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: center ? "center" : "start",
+        inline: "nearest",
+      });
+    }
+  }, 200);
+}
 
 // Projects:
 

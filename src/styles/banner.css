@@ -20,11 +20,28 @@
     font-weight: 700;
 }
 
-.nameSpanEl{
-    background: linear-gradient(90deg, #13B0F5, #E70FAA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nameSpanEl {
+  display: inline-block;
+  width: 0ch; /* Start from 0 */
+  background: linear-gradient(90deg, #13B0F5, #E70FAA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;  /* keep text in one line */
+  overflow: hidden;     /* hide overflowing text */
+  border-right: 2px solid #13B0F5; /* optional cursor */
+  animation: typing 4s steps(18, end) infinite alternate;
+  z-index: 2;
 }
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 18ch; /* match the max chars */
+  }
+}
+
 
 .bannerRightCon{
     height: 350px;

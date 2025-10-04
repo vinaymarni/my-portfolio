@@ -2,13 +2,13 @@ import React from 'react'
 import { GithubSvg, LinkSvg } from '../assets/commonSvgs'
 
 function ProjectCard({data}) {
-  const {name, description, technologiesUsed} = data;
+  const {name, description, technologiesUsed, coverImage} = data;
   return (
     <div className='projectCard'>
       <div className='projectCardImgCon'>
         <img 
             alt={name}
-            src=''
+            src={coverImage}
             className='projectCardImg'
             title={name}
         />

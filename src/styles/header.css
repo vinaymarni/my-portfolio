@@ -36,6 +36,16 @@
     background-color: transparent;
     border: none;
     font-weight: 600;
+    user-select: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.sectionButton:hover{
+    font-weight: bold;
+    background: linear-gradient(90deg, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header-left-con{
@@ -80,20 +90,39 @@
 .ModeDropDownCon{
     position: absolute;
     top: 30px;
-    background-color: rgb(235, 236, 236);
+    /* background-color: black; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     z-index: 5;
     min-width: 100px;
+    padding: 4px;
+    gap: 4px;
+    border: 1px solid gray;
+    background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(8px);   
 }
 
-.ModeDropDownCon span{
-    font-size: 22px;
-    font-weight: 600;
-    padding: 6px;
-    font-weight: poppins;
-    cursor: pointer;
+.dropdownButton{
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.dropdownIamges{
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.dropdownButton span{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    bottom: 4px;
+    right: 4px;
 }
 
 /* TAB */

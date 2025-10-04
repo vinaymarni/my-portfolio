@@ -40,7 +40,6 @@ function Footer() {
         <div className='footerBottomSectionsCon'>
           {allSections.map(eachSection => {
             const sectionData = sectionsData.get(eachSection);
-            console.log(sectionData)
             return(
               <Button
                 key={`${eachSection}_footer_button`}

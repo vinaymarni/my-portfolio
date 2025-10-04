@@ -4,9 +4,8 @@ import { myDetails } from '../assets/data';
 
 function Banner() {
   const name = myDetails.get("name");
-  console.log(name)
   return (
-    <div className='bannerMainSection'>
+    <div id='home' className='bannerMainSection'>
       <div className='bannerLeftCon'>
         <p className='bannerText'>
           Hi 👋,<br/>

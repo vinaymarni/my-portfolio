@@ -1,0 +1,102 @@
+.aboutSectionHeading{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    color: #42446E;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+    
+.aboutText{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.experienceCard{
+    border-bottom: 2px solid #EBEAED;
+    padding-bottom: 1rem;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 1.5rem;
+}
+
+.experienceCardInnerCon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 6px;
+}
+
+.rollText{
+    color: #666666;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.roleTime{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #018C0F;
+    background-color: #D7FFE0;
+    padding: 8px;
+    border-radius: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+}
+
+.iconAndText{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    color: #A7A7A7;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.iconAndText svg{
+    width: 18px;
+    height: 18px;
+}
+
+.lastText{
+    margin-left: auto;
+}
+
+.contactText{
+    color: #1E0E62;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.contactEmailText{
+    font-size: 58px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
