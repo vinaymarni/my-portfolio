@@ -6,7 +6,7 @@ import { GithubSvg, LinkdinSvg } from '../assets/commonSvgs';
 import { useAtomValue } from 'jotai';
 import ModeDropDown from '../commonComponents/ModeDropDown';
 
-function Header() {
+function Header() { 
   const {mode} = useAtomValue(data);
   const allSections = sectionsData.get("sections");
   return (
@@ -19,10 +19,10 @@ function Header() {
         <div className='header-sections-con'>
           {allSections.map(eachSection => {
             const sectionData = sectionsData.get(eachSection);
-            return(
+            return( 
               <Button
-                key={`${eachSection}_button`}
-                buttonClassName="sectionButton"
+                key={`${eachSection}_button`} 
+                buttonClassName={`sectionButton ${mode !== "light" ? "techSectionTextDark" : ""}`}
                 name={eachSection}
                 title={sectionData.title}
                 buttonConClassName="sectionButtonCon"
@@ -32,7 +32,7 @@ function Header() {
           })}
         </div>
 
-        <div className='header-sections-con header-social-con'>
+        <div className={`header-sections-con header-social-con ${mode !== "light" ? "aboutDark" : ""}`}>
           <GithubSvg />
           <LinkdinSvg />
           <ModeDropDown />

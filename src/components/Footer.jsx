@@ -1,10 +1,12 @@
 import React from 'react'
-import { myDetails, otherDetails, sectionsData } from '../assets/data'
+import { data, myDetails, otherDetails, sectionsData } from '../assets/data'
 import "../styles/footer.css"
 import Button from '../commonComponents/Button';
 import { LocationSvg } from '../assets/commonSvgs';
+import { useAtomValue } from 'jotai';
 
 function Footer() {
+  const {mode} = useAtomValue(data);
   const mobile = myDetails.get("mobile");
   const email = myDetails.get("email");
   const social = myDetails.get("social");
@@ -12,7 +14,7 @@ function Footer() {
   const allSections = sectionsData.get("sections");
   
   return (
-    <div className='footer-main-con'>
+    <div className={`footer-main-con ${mode !== "light" ? "aboutDark" : ""}`}>
       <div className='footer-inner-con'>
         <div className='header-left-con'>
           <h3 className='header-profile-name'>{`{${"007"}}`}</h3>
@@ -43,7 +45,7 @@ function Footer() {
             return(
               <Button
                 key={`${eachSection}_footer_button`}
-                buttonClassName="footerSectionButton"
+                buttonClassName={`footerSectionButton ${mode !== "light" ? "techSectionTextDark" : ""}`}
                 name={eachSection}
                 title={sectionData.title}
                 buttonConClassName="footerSectionButtonCon"

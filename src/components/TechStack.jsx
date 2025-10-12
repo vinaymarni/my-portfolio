@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import "../styles/techStack.css"
-import { itemScrollIntoView, myDetails, otherDetails } from '../assets/data';
+import { data, itemScrollIntoView, myDetails, otherDetails } from '../assets/data';
 import Button from '../commonComponents/Button';
+import { useAtomValue } from 'jotai';
 
 function TechStack() {
+  const {mode} = useAtomValue(data);
   const [showMore, setShowMore] = useState(false);
   const skills = myDetails.get("skills");
   return (
     <div id='techStack' className='techStackMainSection'>
-      <h2 className='techSectionHeading'>My Tech Stack</h2>
-      <p className='techSectionText'> Technologies I’ve been working with recently</p>
+      <h2 className={`techSectionHeading ${mode !== "light" ? "techSectionHeadingDark" : ""}`}>My Tech Stack</h2>
+      <p className={`techSectionText ${mode !== "light" ? "techSectionTextDark" : ""}`}> Technologies I’ve been working with recently</p>
       <div className='skillsCon' style={{ height: showMore ? "auto" : "330px" }}>
         {skills.map(each=>{
           const skills = otherDetails.get(each);

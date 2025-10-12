@@ -124,7 +124,7 @@ export const data = atom(initailData);
 // ];
 
 export const sectionsData = new Map([
-    ["sections", ["home", "about", "techStack", "projects", "contact"]],
+    ["sections", ["home", "techStack", "projects", "about", "contact"]],
     ["home", {
         link: "",
         logo: "",
@@ -161,6 +161,7 @@ export const myDetails = new Map([
     ["social", ["gitHub", "linkdin", "email", "whatsapp"]],
     ["name", "vinay Kumar Marni"],
     ["ShortName", "vinay"],
+    ["profile", "/hero.webp"],
     ["skills", ["Frontend Language", "Backend Language", "Tools", "Frameworks", "Database", "DevOps", "Methodologies & Concepts"]],
     ["mobile", "+917702249962"],
     ["email", "vinaykumarmarni26@gmail.com"],
@@ -361,15 +362,15 @@ export const projectDetails = new Map([
     ["Get Right Property",  {
         name:"Get Right Property",
         technologiesUsed: [
-            {name: "Spring Boot", url: "/springBoot.png"},
             {name: "ReactJS", url: "/react.png"},
-            {name: "Javascript", url: "/javascript.png"},
-            {name: "MYSQL", url:  "/mysql.png"},
             {name: "NextJs", url: "/next.png"},
-            {name: "GitHub", url: "/github.png"},
-            // {name: "Maven", url: maven},
+            {name: "Javascript", url: "/javascript.png"},
             {name: "html", url: "/html.png"},
             {name: "CSS", url:"/css.png"},
+            {name: "Spring Boot", url: "/springBoot.png"},
+            {name: "MYSQL", url:  "/mysql.png"},
+            {name: "GitHub", url: "/github.png"},
+            // {name: "Maven", url: maven},
             // {name: "JWT", url: jwt},
         ],
         description:"Developed secure real estate site with Java, Spring Boot, React, AWS.",

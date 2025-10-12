@@ -1,4 +1,8 @@
 .projectCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     border-radius: 10px;
     max-width: 372px;
     box-shadow: 5px 10px 18px #888888;
@@ -7,17 +11,67 @@
     margin-bottom: 1rem;
     margin-top: 1rem;
     min-height: 534px;
-    display: flex;
-    flex-direction: column;
     position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    padding: 4px;
+}
+
+.projectCard::before{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 130%;
+  animation: animate 3s linear infinite;
+  transition: all .3s linear;
+  inset: -2px;
+  z-index: 0;
+  background: conic-gradient(from 0deg, #ff00c8, cyan, #ff00c8);
+  transform-origin: center center;
+  left: 20%;
+  top: -15%;
+}
+
+.projectCard::after{
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background: white;
+  border-radius: 14px;
+  z-index: 1;
+}
+
+.projectCardConDark::after{
+  background: #363636;
+}
+
+.projectCard > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes animate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(180deg);
+  }
 }
 
 .projectCardImgCon{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 260px;
-    background-image: radial-gradient(circle,rgba(245, 101, 5, 1) 0%, rgba(211, 212, 219, 1) 100%);
-}
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    background: transparent;
+    top: 0;
+    /* padding: 4px; */
+    padding-bottom: 0;
+  }
 
 .projectCardImg{
     width: 100%;
@@ -32,6 +86,10 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* margin: 4px; */
+    margin-top: 0;
 }
 
 .projectNameText{
@@ -62,12 +120,15 @@
     align-items: center;
     position: absolute;
     bottom: 0;
-    width: 100%;
     left: 0;
     padding: 1.7rem;
-    background-color: #ffffff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    z-index: 2;
+    background: transparent;
+    margin: 4px;
+    margin-top: 0;
+    width: calc(100% - 8px);
 }
 
 .cardLinksTag{
@@ -109,7 +170,6 @@
     transition-property: all;
     transition-duration: 0.5s;
 }
-
 
 /* Cards Carousals block */
 .cardCarouselMainCon {
@@ -197,6 +257,24 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+}
+
+.cardSkillBox{
+  display: flex; 
+  flex-direction: column;
+  justify-items: center;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 3;
+  gap: 8px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.cardSkillBoxImage{
+  width: 20px;
+  height: 20px;
 }
 
 @media only screen and (min-width: 602px) and (max-width: 1600px) {

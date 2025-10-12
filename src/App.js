@@ -8,12 +8,15 @@ import { useAtomValue } from 'jotai';
 import { data } from './assets/data';
 import About from './components/About';
 import Contact from './components/Contact';
+import Education from './components/Education';
+import Experience from './components/Experience';
 // import Background from './components/Background';
 
 function App() {
   const {mode} = useAtomValue(data);
   return (
     <>
+      <Header />
       {mode === "digital" &&
         <video
           src="/videoplayback.mp4"
@@ -32,12 +35,12 @@ function App() {
         className="App"
       >
         {/* <Background /> */}
-       
-        <Header />
         <Banner />
         <TechStack />
         <Projects />
         <About />
+        <Education />
+        <Experience/>
         <Contact />
         <Footer />
       </div>

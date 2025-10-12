@@ -20,7 +20,7 @@ button{
   scroll-behavior: smooth;
   position: relative;
 
-    background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.5);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -39,6 +39,34 @@ button{
   height: 100vh;
   object-fit: fill;
 
+}
+
+/* Drak css */
+.techSectionHeadingDark{ color: #cccccc !important; }
+.techSectionTextDark{ color: #A7A7A7 !important; }
+
+.aboutDark,
+.aboutDark div,
+.aboutDark p,
+.aboutDark h2,
+.aboutDark a{
+  color: #cccccc !important;
+}
+
+.projectCardConDark,
+.projectCardConDark div,
+.projectCardConDark p,
+.projectCardConDark h2,
+.projectCardConDark a{
+  background-color: #363636 !important;
+  color: #cccccc !important;
+}
+
+.aboutDark svg,
+.aboutDark svg path,
+.projectCardConDark svg,
+.projectCardConDark svg path{
+  fill: #cccccc !important;
 }
 
 /* TAB */
