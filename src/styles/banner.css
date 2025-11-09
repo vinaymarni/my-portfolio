@@ -69,3 +69,24 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+/* TAB */
+@media only screen and (min-width: 801px) and (max-width: 1280px) {
+
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  .bannerMainSection{
+    flex-direction: column-reverse;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .bannerText{
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 10px;
+  }
+}

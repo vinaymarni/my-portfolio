@@ -32,7 +32,7 @@ function Header() {
           })}
         </div>
 
-        <div className={`header-sections-con header-social-con ${mode !== "light" ? "aboutDark" : ""}`}>
+        <div className={`header-social-con ${mode !== "light" ? "aboutDark" : ""}`}>
           <GithubSvg />
           <LinkdinSvg />
           <ModeDropDown />

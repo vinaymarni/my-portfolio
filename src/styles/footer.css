@@ -83,3 +83,45 @@
     width: 20px;
     cursor: pointer;
 }
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+    .footer-inner-con{
+        justify-content: space-between;
+        gap: 10px;
+
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .footer-social-media-con{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        margin-left: 3rem;
+
+        position: absolute;
+        top: 1rem;
+        right: 0;
+    }
+
+    .footerSectionButton{
+        font-size: 16px;
+    }
+
+    .footerBottomSectionsCon{
+        gap: 1rem;
+    }
+
+    .footerLocationText{
+        font-size: 18px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+}
+
