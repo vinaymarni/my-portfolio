@@ -44,6 +44,7 @@
     font-size: 26px;
     line-height: 28px;
     letter-spacing: 1px;
+    text-align: left;
 }
 
 .roleTime{
@@ -116,20 +117,33 @@
     font-weight: 600;
     font-size: 20px;
     color: #666666;
+    white-space: nowrap;
 }
 
-@media only screen and (min-width: 801px) and (max-width: 1280px) {
+@media only screen and (min-width: 801px) and (max-width: 1600px) {
     .contactText,
     .aboutSectionHeading{
-        font-size: 40px;
+        font-size: 30px;
         line-height: 42px;
         margin-bottom: 1rem;
     }
 
     .contactEmailText{
-        font-size: 48px;
+        font-size: 40px;
         text-wrap: wrap;
         word-break: break-all;
+    }
+
+    .roleTime{
+        padding: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .rollText{
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 6px;
     }
 }
 
@@ -137,8 +151,8 @@
 @media only screen and (max-width: 800px) {
     .contactText,
     .aboutSectionHeading{
-        font-size: 34px;
-        line-height: 42px;
+        font-size: 30px;
+        line-height: 38px;
         margin-bottom: 1rem;
     }
 
@@ -147,7 +161,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 1rem;
-        margin-bottom: 6px;
+        margin-bottom: 0;
         flex-direction: column;
     }
 
@@ -160,16 +174,16 @@
 
     .experienceCardInnerCon{
         gap: 10px;
-        margin-bottom: 6px;
+        margin-bottom: 0;
     }
 
     .roleTime{
         position: absolute;
         bottom: 1rem;
         left: 0;
-        padding: 6px;
+        padding: 4px;
         padding-left: 12px;
-        padding-right: 12pz;
+        padding-right: 12px;
     }
 
     .lastText{
@@ -177,7 +191,7 @@
     }
     
     .contactEmailText{
-        font-size: 42px;
+        font-size: 36px;
         text-wrap: wrap;
         word-break: break-all;
     }

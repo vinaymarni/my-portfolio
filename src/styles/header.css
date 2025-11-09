@@ -174,8 +174,9 @@
 }
 
 /* TAB */
-@media only screen and (min-width: 801px) and (max-width: 1280px) {
+@media only screen and (min-width: 801px) and (max-width: 1600px) {
     .header-inner-con {
+        padding: 10px;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -188,6 +189,19 @@
         margin-left: 2rem;
         gap: 2rem;
     }
+
+
+    .sectionButton{
+        font-size: 18px;
+    }
+
+      .header-profile-name{
+        font-size: 26px;
+    }
+
+        .header-profile-bottom-name{
+    font-size: 18px;
+}
 }
 
 /* MOBILE */
@@ -204,5 +218,17 @@
     .header-social-con{
         margin-left: 10px;
         gap: 1rem;
+    }
+
+    .sectionButton{
+        font-size: 16px;
+    }
+
+    .header-profile-name{
+        font-size: 24px;
+    }
+
+    .header-profile-bottom-name{
+        font-size: 16px;
     }
 }

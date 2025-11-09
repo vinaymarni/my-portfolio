@@ -12,7 +12,8 @@ function ProjectCard({data: cardData}) {
   return (
     <div className={`projectCard ${mode !== "light" ? "projectCardConDark" : ""}`}>
       <div className='cardSkillBox'>
-        {technologiesUsed.map(each=>{
+        {technologiesUsed.map((each, ind)=>{
+          if(ind < 6){
           return(
             <img 
                 alt={each.name}
@@ -20,7 +21,7 @@ function ProjectCard({data: cardData}) {
                 src={each.url}
                 className='cardSkillBoxImage'
             />
-          )
+          )}
         })}
       </div>
       <div className='projectCardImgCon'>

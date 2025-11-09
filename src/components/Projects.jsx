@@ -15,15 +15,13 @@ function Projects() {
     <div id='projects' className='techStackMainSection'>
       <h2 className={`techSectionHeading ${mode !== "light" ? "techSectionHeadingDark" : ""}`}>Projects</h2>
       <p className={`techSectionText ${mode !== "light" ? "techSectionTextDark" : ""}`}>Things I’ve built so far</p>
-      <div className='projectBtnsCon'>
-        <Button
+      <Button
                 key="projectSwipe"
                 buttonClassName="projectSwipeButton"
                 icon={viewType ? blocksIcon : swipeIcon}
                 onSubmit={()=>setViewType(prev => !prev)}
               />
         
-      </div>
       {viewType ?
       <CardsCarousal
         allCards={projects.map(eachProj=>{

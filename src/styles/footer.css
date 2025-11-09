@@ -85,6 +85,16 @@
     cursor: pointer;
 }
 
+@media only screen and (min-width: 801px) and (max-width: 1600px) {
+      .footerSectionButton{
+        font-size: 18px;
+    }
+
+       .footer-hr-line{
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
 
 
 /* MOBILE */
@@ -123,6 +133,11 @@
         justify-content: flex-end;
         margin-left: auto;
         margin-top: 10px;
+    }
+
+    .footer-hr-line{
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
     }
 }
 

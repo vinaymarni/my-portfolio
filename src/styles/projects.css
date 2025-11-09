@@ -9,7 +9,6 @@
     font-family: Poppins;
     min-width: 340px;
     margin-bottom: 1rem;
-    margin-top: 1rem;
     min-height: 534px;
     position: relative;
     overflow: hidden;
@@ -140,13 +139,6 @@
     color: black;
 }
 
-.projectBtnsCon{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center ;
-  width: 100%;
-}
-
 .cardLinksTag span{
     text-decoration: underline;
 }
@@ -154,6 +146,9 @@
 .projectSwipeButton{
   border: none;
   background-color: transparent;
+  position: absolute;
+  top: 2rem;
+  right: 0;
 }
 
 .linksSvg{
@@ -294,11 +289,30 @@
 
   .linksCon,
   .projectCardBottomCon{
-    padding: 1rem;
+    padding: 10px;
   }
 
   .projectNameText{
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .projectCard{
+    max-width: 300px;
+    min-width: 270px;
+    min-height: 400px;
+  }
+
+  .projectCardImgCon{
+    height: 200px;
+  }
+
+  .ProjectCardsCon{
+    gap: 10px;
+  }
+
+  .projectContant{
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 }
 
@@ -336,6 +350,27 @@
   }
 
   .projectNameText{
-    font-size: 20px;
+    font-size: 18px;
   }
+
+  .projectContant{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+
+  .projectCard{
+    max-width: 300px;
+    min-width: 270px;
+    min-height: 400px;
+  }
+
+  .projectCardImgCon{
+    height: 200px;
+  }
+
+  .ProjectCardsCon{
+    gap: 10px;
+  }
+
 }
