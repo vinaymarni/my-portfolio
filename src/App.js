@@ -10,6 +10,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import FloatingButton from './otherComponents/FloatingButton';
 // import Background from './components/Background';
 
 function App() {
@@ -44,7 +45,9 @@ function App() {
         <Contact />
         <Footer />
       </div>
-      </>
+      <FloatingButton />
+      
+    </>
   );
 }
 

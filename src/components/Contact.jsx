@@ -1,5 +1,4 @@
 import { useAtomValue } from 'jotai';
-import React from 'react'
 import { data, myDetails } from '../assets/data';
 import "../styles/about.css";
 
@@ -9,7 +8,9 @@ function Contact() {
   return (
     <div id='contact' className='techStackMainSection'>
       <p className={`contactText ${mode !== "light" ? "techSectionHeadingDark" : ""}`}>For any questions please mail us:</p>
-      <p className='contactEmailText'>{email}</p>
+      {/* <a href={`mailto:${email}`}> */}
+        <p className='contactEmailText'>{email}</p>
+        {/* </a> */}
     </div>
   )
 }

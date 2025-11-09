@@ -6,6 +6,7 @@ let initailData = {
 }
 
 export const data = atom(initailData);
+export const scrollValue = atom(0);
 
 // Frontend:  
 // - HTML, CSS, JavaScript, Bootstrap  
@@ -165,8 +166,8 @@ export const myDetails = new Map([
     ["skills", ["Frontend Language", "Backend Language", "Tools", "Frameworks", "Database", "DevOps", "Methodologies & Concepts"]],
     ["mobile", "+917702249962"],
     ["email", "vinaykumarmarni26@gmail.com"],
-    ["github", ""],
-    ["linkdin", ""],
+    ["github", "https://github.com/vinaymarni"],
+    ["linkdin", "https://www.linkedin.com/in/vinay-kumar-marni/"],
     ["address", "Bengaluru - 560066"],
     ["experience", ["BFC", "RP CLAN"]],
     ["projects", ["Get Right Property", "Rp Clan Internal Application", "Expense Tracker", "Hospital Management System", "PDF to IMAGE Converter", "Personal Portfolio Project"]],

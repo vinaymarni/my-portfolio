@@ -1,5 +1,5 @@
 import React from 'react'
-import { data, myDetails, otherDetails, sectionsData } from '../assets/data'
+import { data, itemScrollIntoView, myDetails, otherDetails, sectionsData } from '../assets/data'
 import "../styles/footer.css"
 import Button from '../commonComponents/Button';
 import { LocationSvg } from '../assets/commonSvgs';
@@ -49,6 +49,7 @@ function Footer() {
                 name={eachSection}
                 title={sectionData.title}
                 buttonConClassName="footerSectionButtonCon"
+                onSubmit={()=>itemScrollIntoView(eachSection)}
               />
             )
           })}
